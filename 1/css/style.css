@@ -136,7 +136,6 @@ h1 a {
 .columnhistoria {
     padding: 10px;
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     align-content: center;
     max-width: 70%;
@@ -162,8 +161,12 @@ h1 a {
 
 table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: separate;
+    table-layout: auto;
+    margin: 0;
+    padding: 0px;
+    text-align: justify;
+    height: 100%;
 }
 
 td,
@@ -171,4 +174,7 @@ th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    text-align: justify;
+    margin: 15px;
+    height: auto;
 }
